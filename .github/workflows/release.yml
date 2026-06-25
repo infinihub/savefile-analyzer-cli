@@ -1,0 +1,77 @@
+name: Release Savefile Analyzer CLI
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_notes:
+        description: "Release notes for this version"
+        required: false
+        type: string
+        default: ""
+
+jobs:
+  release:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build Windows binary
+        run: bun run build:windows
+
+      - name: Build Linux binary
+        run: bun run build:linux
+
+      - name: Build macOS binary
+        run: bun run build:macos
+
+      - name: Generate version
+        id: version
+        run: |
+          TIMESTAMP=$(date +"%Y-%m-%d-%H-%M")
+          echo "version=$TIMESTAMP" >> $GITHUB_OUTPUT
+          echo "Release version: $TIMESTAMP"
+
+      - name: Create release directory
+        run: |
+          mkdir -p release
+          cp -r dist/* release/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3.0.1
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: Release v${{ steps.version.outputs.version }}
+          body: |
+            ${{ github.event.inputs.release_notes }}
+
+            ## Installation
+
+            ### Windows (x64)
+            Download `savefile-analyzer.exe` and run it.
+
+            ### Linux (x64)
+            Download `savefile-analyzer-linux-x64`, make it executable (`chmod +x savefile-analyzer-linux-x64`), and run it.
+
+            ### macOS (x64)
+            Download `savefile-analyzer-darwin-x64`, make it executable (`chmod +x savefile-analyzer-darwin-x64`), and run it.
+
+            **Built with Bun**
+          files: |
+            release/*
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

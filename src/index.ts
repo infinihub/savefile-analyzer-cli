@@ -1,5 +1,5 @@
-import readline from "node:readline";
 import path from "node:path";
+import readline from "node:readline";
 
 import { Savefile, type ICElement } from "savefile.js";
 
