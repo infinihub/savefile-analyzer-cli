@@ -4,6 +4,7 @@
   "scripts": {
     "lint": "oxlint",
     "format": "oxfmt",
+    "open": "bun ./src/index.ts",
     "build": "bun build --minify --compile ./src/index.ts --outfile=dist/savefile-analyzer.exe --target=bun-windows-x64"
   },
   "dependencies": {
