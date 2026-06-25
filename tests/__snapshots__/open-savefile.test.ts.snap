@@ -1,0 +1,45 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`Interactive Analyzer E2E Flow: [open-savefile] [no ansi] 1`] = `
+"
+=====================================
+ ✨ INFINITE CRAFT SAVEFILE STATS ✨ 
+=====================================
+
+┌───────────────────┬────────┐
+│                   │ Count  │
+├───────────────────┼────────┤
+│    Total Elements │ 88559  │
+│     Total Recipes │ 110163 │
+│ First Discoveries │ 43585  │
+└───────────────────┴────────┘
+
+💡 Interactive Finder Active
+👉 Type to filter. Use ⬆️ / ⬇️ to select, Enter to view details, Ctrl+C to close.
+-------------------------------------------------------
+[CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: 
+[CLEAR_SCREEN_DOWN]"
+`;
+
+exports[`Interactive Analyzer E2E Flow: [open-savefile] 1`] = `
+"
+=====================================
+ ✨ INFINITE CRAFT SAVEFILE STATS ✨ 
+=====================================
+
+┌───────────────────┬────────┐
+│ \x1B[0m\x1B[1m \x1B[0m                 │ \x1B[0m\x1B[1mCount\x1B[0m  │
+├───────────────────┼────────┤
+│    Total Elements │ \x1B[0m\x1B[33m88559\x1B[0m  │
+│     Total Recipes │ \x1B[0m\x1B[33m110163\x1B[0m │
+│ First Discoveries │ \x1B[0m\x1B[33m43585\x1B[0m  │
+└───────────────────┴────────┘
+
+💡 Interactive Finder Active
+👉 Type to filter. Use ⬆️ / ⬇️ to select, Enter to view details, Ctrl+C to close.
+\x1B[36m-------------------------------------------------------\x1B[0m
+[CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: 
+[CLEAR_SCREEN_DOWN]"
+`;

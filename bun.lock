@@ -8,6 +8,7 @@
       },
       "devDependencies": {
         "@gameroman/config": "0.2.2",
+        "@savefile/fixtures": "0.0.1",
         "@types/bun": "1.3.14",
         "oxfmt": "0.56.0",
         "oxlint": "1.71.0",
@@ -106,6 +107,8 @@
     "@oxlint/binding-win32-ia32-msvc": ["@oxlint/binding-win32-ia32-msvc@1.71.0", "", { "os": "win32", "cpu": "ia32" }, "sha512-W4HvOHGzVLHcrmFu+bMrJlho+/yrlX5ZNdJZqGe8MEldkQG+RHYhxxad9P4jvWAYFmIqUA5i9DQ8QsJqSU9GIw=="],
 
     "@oxlint/binding-win32-x64-msvc": ["@oxlint/binding-win32-x64-msvc@1.71.0", "", { "os": "win32", "cpu": "x64" }, "sha512-D2kyEIPHk/G/wiZLnwTVC/sVst+T/lKldVOjAFpgTIBUAOlry72e5OiapDbDBF4LfJLkN5ypJb/8Eu6yJzkveQ=="],
+
+    "@savefile/fixtures": ["@savefile/fixtures@0.0.1", "", {}, "sha512-GgfvEMsvw32Rm7U+OlusxVqVnTCYf9NlBS+o6EOyClEbnjO4ijBieQKWjtoeiMAKcj+g2yiHWYUdpBlPToOAeA=="],
 
     "@types/bun": ["@types/bun@1.3.14", "", { "dependencies": { "bun-types": "1.3.14" } }, "sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw=="],
 

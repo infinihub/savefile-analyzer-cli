@@ -1,0 +1,141 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`Interactive Analyzer E2E Flow: [open-savefile] [no ansi] 1`] = `
+"
+=====================================
+ ✨ INFINITE CRAFT SAVEFILE STATS ✨ 
+=====================================
+
+┌───────────────────┬────────┐
+│                   │ Count  │
+├───────────────────┼────────┤
+│    Total Elements │ 88559  │
+│     Total Recipes │ 110163 │
+│ First Discoveries │ 43585  │
+└───────────────────┴────────┘
+
+💡 Interactive Finder Active
+👉 Type to filter. Use ⬆️ / ⬇️ to select, Enter to view details, Ctrl+C to close.
+-------------------------------------------------------
+[CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: 
+[CLEAR_SCREEN_DOWN][INPUT:p][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: p
+[CLEAR_SCREEN_DOWN]
+   Matches (Use ⬆️/⬇️, Enter to inspect):
+ ➔ 🅿️ P
+   🥧 Pi
+   🤔 .p
+   🌌 Cp
+   💙 FP
+   💿 LP
+   ☝️ Up
+   🌟 Xp
+   🕰️ Pm
+   📷 Ph
+[MOVE_CURSOR:0,-11][CURSOR_TO:20][INPUT:a][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: pa
+[CLEAR_SCREEN_DOWN]
+   Matches (Use ⬆️/⬇️, Enter to inspect):
+ ➔ 💸 Pay
+   🐾 Paw
+   🥊 pac
+   💆 Spa
+   👯 Pal
+   👋 Pat
+   🌴 pal
+   🥘 Pan
+   👍 Pas
+   👍 Pag
+[MOVE_CURSOR:0,-11][CURSOR_TO:21][INPUT:w][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: paw
+[CLEAR_SCREEN_DOWN]
+   Matches (Use ⬆️/⬇️, Enter to inspect):
+ ➔ 🐾 Paw
+   👑 Pawn
+   🐾 Pawf
+   🐾 Apaw
+   👋 Hi Apaw
+   👋🐾 "hi Paw"
+   👋🐾 "hi paw"
+   🐾 Mr. Apaw
+   👋 "hi ApaW"
+   👋 "hi Apaw"
+[MOVE_CURSOR:0,-11][CURSOR_TO:22][INPUT:n][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: pawn
+[CLEAR_SCREEN_DOWN]
+   Matches (Use ⬆️/⬇️, Enter to inspect):
+ ➔ 👑 Pawn
+   👋 "hi Apawn"
+[MOVE_CURSOR:0,-3][CURSOR_TO:23]"
+`;
+
+exports[`Interactive Analyzer E2E Flow: [open-savefile] 1`] = `
+"
+=====================================
+ ✨ INFINITE CRAFT SAVEFILE STATS ✨ 
+=====================================
+
+┌───────────────────┬────────┐
+│ \x1B[0m\x1B[1m \x1B[0m                 │ \x1B[0m\x1B[1mCount\x1B[0m  │
+├───────────────────┼────────┤
+│    Total Elements │ \x1B[0m\x1B[33m88559\x1B[0m  │
+│     Total Recipes │ \x1B[0m\x1B[33m110163\x1B[0m │
+│ First Discoveries │ \x1B[0m\x1B[33m43585\x1B[0m  │
+└───────────────────┴────────┘
+
+💡 Interactive Finder Active
+👉 Type to filter. Use ⬆️ / ⬇️ to select, Enter to view details, Ctrl+C to close.
+\x1B[36m-------------------------------------------------------\x1B[0m
+[CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: 
+[CLEAR_SCREEN_DOWN][INPUT:p][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: p
+[CLEAR_SCREEN_DOWN]
+   \x1B[90mMatches (Use ⬆️/⬇️, Enter to inspect):\x1B[0m
+\x1B[35m ➔ \x1B[0m🅿️ \x1B[1m\x1B[4mP\x1B[0m
+   🥧 Pi\x1B[0m
+   🤔 .p\x1B[0m
+   🌌 Cp\x1B[0m
+   💙 FP\x1B[0m
+   💿 LP\x1B[0m
+   ☝️ Up\x1B[0m
+   🌟 Xp\x1B[0m
+   🕰️ Pm\x1B[0m
+   📷 Ph\x1B[0m
+[MOVE_CURSOR:0,-11][CURSOR_TO:20][INPUT:a][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: pa
+[CLEAR_SCREEN_DOWN]
+   \x1B[90mMatches (Use ⬆️/⬇️, Enter to inspect):\x1B[0m
+\x1B[35m ➔ \x1B[0m💸 \x1B[1m\x1B[4mPay\x1B[0m
+   🐾 Paw\x1B[0m
+   🥊 pac\x1B[0m
+   💆 Spa\x1B[0m
+   👯 Pal\x1B[0m
+   👋 Pat\x1B[0m
+   🌴 pal\x1B[0m
+   🥘 Pan\x1B[0m
+   👍 Pas\x1B[0m
+   👍 Pag\x1B[0m
+[MOVE_CURSOR:0,-11][CURSOR_TO:21][INPUT:w][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: paw
+[CLEAR_SCREEN_DOWN]
+   \x1B[90mMatches (Use ⬆️/⬇️, Enter to inspect):\x1B[0m
+\x1B[35m ➔ \x1B[0m🐾 \x1B[1m\x1B[4mPaw\x1B[0m
+   👑 Pawn\x1B[0m
+   🐾 Pawf\x1B[0m
+   🐾 Apaw\x1B[0m
+   👋 Hi Apaw\x1B[0m
+   👋🐾 "hi Paw"\x1B[0m
+   👋🐾 "hi paw"\x1B[0m
+   🐾 Mr. Apaw\x1B[0m
+   👋 "hi ApaW"\x1B[0m
+   👋 "hi Apaw"\x1B[0m
+[MOVE_CURSOR:0,-11][CURSOR_TO:22][INPUT:n][CURSOR_TO:0][CLEAR_LINE:0]
+🔍 Search element: pawn
+[CLEAR_SCREEN_DOWN]
+   \x1B[90mMatches (Use ⬆️/⬇️, Enter to inspect):\x1B[0m
+\x1B[35m ➔ \x1B[0m👑 \x1B[1m\x1B[4mPawn\x1B[0m
+   👋 "hi Apawn"\x1B[0m
+[MOVE_CURSOR:0,-3][CURSOR_TO:23]"
+`;
