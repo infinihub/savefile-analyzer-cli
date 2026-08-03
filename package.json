@@ -12,7 +12,7 @@
     "build:macos": "bun build --minify --compile ./src/index.ts --outfile=dist/savefile-analyzer-darwin-x64 --target=bun-darwin-x64"
   },
   "dependencies": {
-    "savefile.js": "0.0.5"
+    "savefile.js": "0.1.0"
   },
   "devDependencies": {
     "@gameroman/config": "0.2.8",
