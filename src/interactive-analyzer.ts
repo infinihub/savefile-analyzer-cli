@@ -227,12 +227,10 @@ async function interactiveAnalyzer(
         currentQuery = currentQuery.slice(0, -1);
         selectedIndex = 0; // Reset index during layout shifts
       }
-    } else {
+    } else if (!key.startsWith("\x1b")) {
       // Absorb string input text chunks safely
-      if (!key.startsWith("\x1b")) {
-        currentQuery += key;
-        selectedIndex = 0; // Reset focus index on active character modifications
-      }
+      currentQuery += key;
+      selectedIndex = 0; // Reset focus index on active character modifications
     }
 
     renderSearch();
